@@ -43,6 +43,20 @@ const channelsListData = [
   }
 ]
 
+const socialListData = [
+  {
+    url: "https://www.instagram.com/carol_maia.9/",
+    imageUrl: "/assets/instagram.svg",
+    alt: "Instagram de Caroline Maia"
+  },
+  {
+    url: "https://www.youtube.com/channel/UCETTMEOi0H1I1N5SkdYeJQQ",
+    imageUrl: "/assets/youtube.svg",
+    alt: "Youtube de Caroline Maia"
+  },
+  
+]
+
 function App() {
   return (
     <div className="App">
@@ -60,6 +74,13 @@ function App() {
               return (
                 <ListItem url={channel.url} imageUrl={channel.imageUrl} alt={channel.alt}/>
               )
+          })}
+        </Section>
+        <Section title="Minhas redes" subtitle="Se conecte comigo agora mesmo!">
+          {socialListData.map((social) => {
+            return (
+              <ListItem url={social.url} imageUrl={social.imageUrl} alt={social.alt}/>
+            )
           })}
         </Section>
       </main>
