@@ -1,11 +1,12 @@
 import perfil from '../assets/perfil.jpg';
+import { HeaderContainer } from './styles';
 
 export function Header(){
   return (
-    <header>
+    <HeaderContainer>
       <div>
         <img src={perfil} alt="" />
       </div>
-    </header>
+    </HeaderContainer>
   )
 }
