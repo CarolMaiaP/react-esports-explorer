@@ -1,10 +1,12 @@
+import { SectionContainer } from "./styles";
+
 export function Section(){
   return (
-    <section>
+    <SectionContainer>
       <div>
         <h2>Meus jogos</h2>
         <p>Os games que eu mais curto jogar!</p>
-        <ul className="games-list">
+        <ul>
           <li>
               <a 
               target="_blank"
@@ -38,6 +40,6 @@ export function Section(){
           </li>
         </ul>
       </div>
-    </section>
+    </SectionContainer>
   )
 }

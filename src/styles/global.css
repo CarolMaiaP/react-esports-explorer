@@ -20,3 +20,12 @@ body * {
   font-family: 'Inter', sans-serif;
   line-height: 160%;
 }
+
+main {
+  max-width: 580px;
+  width: 90%;
+  margin: 32px auto;
+
+  display: grid;
+  gap: 24px;
+}
