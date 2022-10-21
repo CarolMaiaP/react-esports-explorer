@@ -35,6 +35,11 @@ export const SectionContainer = styled.section`
           transform: scale(1.1);
         }
 
+        .games-list {
+          width: 90px;
+          border-radius: 8px;
+        }
+
         img{
           width: 90px;
           border-radius: 8px;

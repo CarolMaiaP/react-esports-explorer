@@ -2,6 +2,7 @@ interface ListItemProps {
   url: string;
   imageUrl: string;
   alt: string;
+  className?: string;
 }
 
 export function ListItem(props: ListItemProps) {

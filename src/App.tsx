@@ -65,7 +65,7 @@ function App() {
         <Section title="Meus jogos" subtitle="Os games que eu mais curto jogar!">
           {gamesListData.map((game) => {
             return(
-              <ListItem url={game.url} imageUrl={game.imageUrl} alt={game.alt}/>
+              <ListItem className="games-list" url={game.url} imageUrl={game.imageUrl} alt={game.alt}/>
             )
           })}
         </Section>
