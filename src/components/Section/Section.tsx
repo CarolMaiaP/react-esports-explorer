@@ -1,11 +1,16 @@
 import { SectionContainer } from "./styles";
 
-export function Section(){
+interface SectionProps {
+  title: string;
+  subtitle: string;
+}
+
+export function Section(props: SectionProps){
   return (
     <SectionContainer>
       <div>
-        <h2>Meus jogos</h2>
-        <p>Os games que eu mais curto jogar!</p>
+        <h2>{props.title}</h2>
+        <p>{props.subtitle}</p>
         <ul>
           <li>
               <a 

@@ -7,7 +7,8 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Section />
+        <Section title="Meus jogos" subtitle="Os games que eu mais curto jogar!" />
+        <Section title="Canais e streamers" subtitle="Lista de canais e transmissões que não perco!" />
       </main>
     </div>
   )
