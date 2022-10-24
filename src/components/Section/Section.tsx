@@ -5,6 +5,7 @@ interface SectionProps {
   title: string;
   subtitle: string;
   children?: ReactNode;
+  className?: string;
 }
 
 export function Section(props: SectionProps){
@@ -13,7 +14,7 @@ export function Section(props: SectionProps){
       <div>
         <h2>{props.title}</h2>
         <p>{props.subtitle}</p>
-        <ul>
+        <ul className={props.className}>
           {props.children}
         </ul>
       </div>

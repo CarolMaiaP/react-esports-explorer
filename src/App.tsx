@@ -62,10 +62,13 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Section title="Meus jogos" subtitle="Os games que eu mais curto jogar!">
+        <Section title="Meus jogos" 
+          subtitle="Os games que eu mais curto jogar!"
+          className="games-list"
+        >
           {gamesListData.map((game) => {
             return(
-              <ListItem className="games-list" url={game.url} imageUrl={game.imageUrl} alt={game.alt}/>
+              <ListItem url={game.url} imageUrl={game.imageUrl} alt={game.alt}/>
             )
           })}
         </Section>

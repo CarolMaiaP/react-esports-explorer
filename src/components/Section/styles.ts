@@ -11,35 +11,32 @@ export const SectionContainer = styled.section`
       padding: 2rem;
       padding-top: 1.5rem;
       border-radius: 8px;
-    }
-    
-    h2{
-      letter-spacing: -0.47px;
-    }
 
-    p{
-      letter-spacing: -0.18;
-    }
+      h2{
+        letter-spacing: -0.47px;
+      }
 
-    ul{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
+      p{
+        letter-spacing: -0.18;
+      }
 
-      margin-top: 1.5rem;
+      ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
 
-      li{
-        transition: transform .3s;
+        margin-top: 1.5rem;
 
-        &:hover{
-          transform: scale(1.1);
+        li{
+          transition: transform .3s;
+
+          &:hover{
+            transform: scale(1.1);
+          }
         }
+      }
 
-        .games-list {
-          width: 90px;
-          border-radius: 8px;
-        }
-
+      .games-list{
         img{
           width: 90px;
           border-radius: 8px;
