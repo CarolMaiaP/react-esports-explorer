@@ -35,11 +35,6 @@ const channelsListData = [
     url: "https://www.twitch.tv/alanzoka",
     imageUrl: "https://static-cdn.jtvnw.net/jtv_user_pictures/15cec952-c1ba-4ff8-a79c-53c2fa5bd269-profile_image-150x150.png",
     alt: "Imagem de Alanzoka"
-  },
-  {
-    url: "https://www.twitch.tv/cellbit",
-    imageUrl: "https://static-cdn.jtvnw.net/jtv_user_pictures/cb885149-f7f7-48f0-99ae-fe0a386ed3e2-profile_image-150x150.png",
-    alt: "Imagem de Cellbit"
   }
 ]
 
@@ -72,7 +67,10 @@ function App() {
             )
           })}
         </Section>
-        <Section title="Canais e streamers" subtitle="Lista de canais e transmissões que não perco!">
+        <Section title="Canais e streamers" 
+          subtitle="Lista de canais e transmissões que não perco!"
+          className='channels-list'
+        >
           {channelsListData.map((channel) => {
               return (
                 <ListItem url={channel.url} imageUrl={channel.imageUrl} alt={channel.alt}/>

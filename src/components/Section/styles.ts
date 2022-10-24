@@ -42,5 +42,13 @@ export const SectionContainer = styled.section`
           border-radius: 8px;
         }
       }
+
+      .channels-list{
+        img{
+          border-radius: 50%; 
+          width: 70px;
+          border: 1px solid #443E54;
+        }
+      }
     }
 `
